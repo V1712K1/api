@@ -70,10 +70,26 @@
   </div>
 
   <footer>
+    <h2>Stay informed</h2>
     <hr>
     <div>
-      <p>Follow us and use the following social media platforms to get in contact with us and to share your passion for the brand, products and services of Mercedes-Benz.</p>  
-
+      <div class="frase_icons">
+        <p>Follow us and use the following social media platforms to get in contact with us and to share your passion for the brand, products and services of Mercedes-Benz.</p> 
+      </div> 
+      <div class="icon_spacing">
+        <a href="https://www.facebook.com/MercedesBenz" ><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/mercedesbenz" ><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/MercedesBenzTV" ><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/mercedesbenz/" ><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <div class="row_outros">
+        <img src="Images/amg.png" alt="amg_logo" class="outros_size" >
+        <img src="Images/daimler.png" alt="daimler_logo" class="outros_size" >
+        <img src="Images/smart.png" alt="brabus_logo" class="outros_size" >
+      </div>
     </div>
     <hr>
   </footer>
@@ -103,7 +119,8 @@
     }
 
     .under_carousel_stuff{
-      margin-top: 90px;
+      margin-top: 75px;
+      margin-bottom: 75px;
       border: 2px solid white;
     }
 
@@ -111,6 +128,29 @@
       display: flex;
       margin: 1rem;
       
+    }
+
+    .frase_icons{
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .icon_spacing{
+
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+
+    .row_outros{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .outros_size{
+      width: 250px;
     }
 </style>
 </html>
