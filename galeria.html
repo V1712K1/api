@@ -30,14 +30,14 @@
 </header>
 <div class="container">
     <section class="gallery">
-        <figure class="item1"><img src="Images/imagem1_galeria.jpg" alt="img1" class="gallery__img"></figure>
-        <figure class="item2"><img src="Images/imagem2_galeria.jpg" alt="img2" class="gallery__img"></figure>
+        <figure class="item1"><img src="Images/imagem1_galeria.jpg" alt="img2" class="gallery__img"></figure>
+        <figure class="item2"><img src="Images/imagem2_galeria.jpeg" alt="img2" class="gallery__img"></figure>
         <figure class="item3"><img src="Images/imagem3_galeria.jpg" alt="img3" class="gallery__img"></figure>
         <figure class="item4"><img src="Images/imagem4_galeria.jpg" alt="img4" class="gallery__img"></figure>
         <figure class="item5"><img src="Images/imagem5_galeria.jpg" alt="img5" class="gallery__img"></figure>
-        <figure class="item6"><img src="Images/imagem6_galeria.jpg" alt="img6" class="gallery__img"></figure>
+        <figure class="item6"><img src="Images/imagem6_galeria.jpeg" alt="img6" class="gallery__img"></figure>
         <figure class="item7"><img src="Images/imagem7_galeria.jpg" alt="img7" class="gallery__img"></figure>
-        <figure class="item8"><img src="Images/imagem8_galeria.jpg" alt="img8" class="gallery__img"></figure>
+        <figure class="item8"><img src="Images/imagem8_galeria.jpeg" alt="img8" class="gallery__img"></figure>
         <figure class="item9"><img src="Images/imagem9_galeria.jpg" alt="img9" class="gallery__img"></figure>
     </section>
     
@@ -114,25 +114,76 @@
 
       display: grid;
       justify-content: center;
-      grid-template-rows: repeat(4, 200px);
-      grid-template-columns: repeat(4, 300px);
+      grid-template-rows: repeat(4, 250px);
+      grid-template-columns: repeat(4, 350px);
 
-      grid-row-gap: 10px;
-      grid-column-gap: 10px;
-
-      width: 1440px;
+      width: auto;
       height: auto;
+      grid-row-gap: 10px;
+      grid-column-gap: 26px;
+
       margin-top: 100px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 100px;
+
+
+
     }
 
     .gallery__img {
+      border-radius: 5px;
+      box-shadow: 3px 3px 9px lightseagreen;
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
       display: block;
+    }
+
+    .item1{
+      width: 405px;
+      grid-column: 4/ 4;
+      grid-row: 4 / 4;
+    }
+
+    .item2{
+      width: 405px;
+      grid-column: 4/span 4;
+      grid-row: 3 / 3;
+    }
+
+    .item3{
+      grid-column: 1/ span 2;
+      grid-row: 1 / span 2;
+    }
+
+    .item4{
+      grid-column: 3/ span 4;
+      grid-row: 1/ 1;
+    }
+
+    .item5{
+      grid-column: 1 / span 2;
+      grid-row: 3 / 3;
+    }
+
+    .item6{
+      grid-column: 3/ 3;
+      grid-row: 3/3;
+    }
+
+    .item7{
+      grid-column: 1 / span 2;
+      grid-row: 4/4;
+    }
+
+    .item8{
+      grid-column: 3/4;
+      grid-row: 4/4;
+    }
+
+    .item9{
+      grid-column: 3/ span 4;
+      grid-row: 2/2
     }
 
 </style>
